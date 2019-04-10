@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+$blue: #13b3e9;
+
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+
+$primary: #008fd5;
+$primary-invert: #F3F3F3;
+
+$white: #F3F3F3;
+$dark: #2f444e;
+
+@import "../node_modules/bulma/bulma";
+
+.m-t-lg {
+  margin-top: 1rem;
+}
+.m-t-xl {
+  margin-top: 1.5rem;
+}
+
+.leasing-header {
+  background: url('../img/header-bg.jpg') no-repeat center;
+  background-size: cover;
+}
+.leasing-product_1,
+.leasing-product_2,
+.leasing-product_3 {
+  min-height: 200px;
+  padding: 2rem;
+  background: $blue;
+  overflow: hidden;
+}
+.leasing-product  {
+  color: #f3f3f3;
+  transition: 0.5s ease all;
+  padding: 0;
+}
+.leasing-product:hover  {
+  transform: translateY(-20px);
+}
+.leasing-product_1 {
+  background: linear-gradient(45deg, rgba(0,110,147,0.85), rgba(0,143,213,0.85)), url('../img/train.jpg');
+  background-size: cover;
+}
+.leasing-product_2 {
+  background: linear-gradient(45deg, rgba(0,110,147,0.85), rgba(0,143,213,0.85)), url('../img/building.jpg');
+  background-size: cover;
+}
+.leasing-product_3 {
+  background: linear-gradient(45deg, rgba(0,110,147,0.85), rgba(0,143,213,0.85)), url('../img/plane.jpg');
+  background-size: cover;
+}
+.leasing-navbar .navbar-item {
+  color: $dark;
+}
+.leasing-navbar .navbar-item:hover {
+  color: $primary !important;
+  background: transparent !important;
+}
+.leasing-steps {
+  background: url('../img/steps-bg.jpg') no-repeat center;
+  background-size: cover;
+}
+.leasing-footer {
+  background: $dark;
+}
